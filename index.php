@@ -67,11 +67,11 @@ setcookie("count", $count);
 
 <body>
     <div id="window">
-        <h1 id="main-text">Первый веб-сайт на PHP</h1>
+        <h1 id="main-text">The first website in PHP</h1>
         <h2 id="second-text">Hello, World!</h2>
-        <p id="description">Я изучаю PHP для тестирования веб-сайтов на уязвимости.</p>
+        <p id="description">Arthur learns PHP for testing websites for vulnerabilities.</p>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="form">
-            <input id="counter" type="submit" value="Нажать: <?php echo $_COOKIE["count"];
+            <input id="counter" type="submit" value="Click: <?php echo $_COOKIE["count"];
             setcookie("count", intval($_COOKIE["count"] + 1)); ?>" />
 
         </form>
